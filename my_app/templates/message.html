@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- CSS for Styling -->
+    <style>
+        /* Success message styles */
+        #success-message {
+            position: fixed; /* Fixed position so it stays in the corner */
+            bottom: 20px; /* Position at the bottom */
+            right: 20px; /* Align to the right */
+            padding: 15px; /* Padding for better readability */
+            background-color: #28a745; /* Success green color */
+            color: white; /* White text for contrast */
+            font-size: 14px; /* Slightly smaller font */
+            border-radius: 5px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            opacity: 0; /* Initially invisible */
+            transition: opacity 0.5s ease-in-out; /* Smooth transition for showing and hiding */
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
+
+        /* Show the message by changing opacity */
+        #success-message.show {
+            opacity: 1; /* Fully visible */
+        }
+
+        /* Additional styling for the close button */
+        #success-message .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML for success message -->
+    <!-- <div id="success-message" class="alert-success">
+        <span class="close-btn" id="close-btn">&times;</span>
+        Your message has been sent successfully!
+    </div> -->
+    {% if messages %}
+    <div id="success-message" class="alert-success">
+        <span class="close-btn" id="close-btn">&times;</span>
+        {% for message in messages %}
+           {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var messageDiv = document.getElementById('success-message');
+            
+            // Show the message with fade-in effect
+            setTimeout(function() {
+                messageDiv.classList.add('show');
+
+                // Automatically hide the message after 3 seconds
+                setTimeout(function() {
+                    messageDiv.classList.remove('show'); // Fade-out effect
+                    setTimeout(function() {
+                        messageDiv.style.display = 'none'; // Hide completely after fade-out
+                    }, 500);  // Allow fade-out to complete before hiding
+                }, 3000);  // 3000 milliseconds = 3 seconds
+
+            }, 100);  // Slight delay to apply fade-in effect
+
+            // Handle manual closing of the message
+            var closeBtn = document.getElementById('close-btn');
+            if (closeBtn) {
+                closeBtn.onclick = function() {
+                    messageDiv.classList.remove('show'); // Fade-out effect
+                    setTimeout(function() {
+                        messageDiv.style.display = 'none'; // Hide after fade-out
+                    }, 500);  // Allow fade-out to complete
+                };
+            }
+        });
+    </script>
+</body>
+</html>

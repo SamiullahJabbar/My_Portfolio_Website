@@ -1,0 +1,26 @@
+/* layout.css */
+
+.container {
+    display: flex; /* Enable flexbox */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.one-forth {
+    width: 25%; /* Adjust as needed for the side layout */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+.text {
+    /* Additional styles for the text if needed */
+}
+
+.subheading {
+    color: darkgrey; /* Example: Change color */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Change button color */
+    color: white; /* Button text color */
+}
