@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Message</title>
+    <title></title>
 
     <!-- CSS for Styling -->
     <style>
@@ -40,11 +40,21 @@
 </head>
 <body>
 
-    <!-- Success Message (hidden initially) -->
-    <div id="success-message" class="alert-success">
-        <span class="close-btn" id="close-btn">&times;</span> <!-- Close button -->
+    <!-- HTML for success message -->
+    <!-- <div id="success-message" class="alert-success">
+        <span class="close-btn" id="close-btn">&times;</span>
         Your message has been sent successfully!
+    </div> -->
+    {% if messages %}
+    <div id="success-message" class="alert-success">
+        <span class="close-btn" id="close-btn">&times;</span>
+        {% for message in messages %}
+           {{ message }}
+        {% endfor %}
     </div>
+{% endif %}
+
+
 
     <!-- JavaScript -->
     <script>

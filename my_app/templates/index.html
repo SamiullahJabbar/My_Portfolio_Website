@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SAMIULLAH JABBAR </title>
+    <title>SAMIULLAH JABBAR</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
     <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -45,7 +46,7 @@
                 <div class="overlay"></div>
                 <div class="container-fluid px-md-0">
                     <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                        <div class="one-third order-md-last img" style="background-image:url({% static 'images/img3.jpeg' %});">
+                        <div class="one-third order-md-last img" style="background-image:url({% static 'images/v4.jpeg' %});">
                             <div class="overlay"></div>
                             <div class="overlay-1"></div>
                         </div>
@@ -53,7 +54,11 @@
                             <div class="text">
                                 <span class="subheading">Hello!</span>
                                 <h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-                                <p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+                                <!-- <p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p> -->
+                                <p>
+                                    <a href="#" class="btn btn-primary">Hire me</a> 
+                                    <a href="{% url 'download_cv' %}" class="btn btn-primary btn-outline-primary">Download CV</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -64,7 +69,7 @@
                 <div class="overlay"></div>
                 <div class="container-fluid px-md-0">
                     <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                        <div class="one-third order-md-last img" style="background-image:url({% static 'images/img4.jpeg' %});">
+                        <div class="one-third order-md-last img" style="background-image:url({% static 'images/v3.jpeg' %});">
                             <div class="overlay"></div>
                             <div class="overlay-1"></div>
                         </div>
@@ -72,7 +77,12 @@
                             <div class="text">
                                 <span class="subheading">We Design &amp; Build Brands</span>
                                 <h1 class="mb-4 mt-3">Hi, I am <span>Samiullah</span> This is my favorite work.</h1>
-                                <p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+                                <!-- <p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p> -->
+                                <p>
+                                    <a href="#" class="btn btn-primary">Hire me</a> 
+                                    <a href="{% url 'download_cv' %}" class="btn btn-primary btn-outline-primary">Download CV</a>
+                                </p>
+                                
                             </div>
                         </div>
                     </div>
@@ -138,7 +148,7 @@
                 <div class="col-md-6 col-lg-5 d-flex">
                     <div class="img-about img d-flex align-items-stretch">
                         <div class="overlay"></div>
-                        <div class="img d-flex align-self-stretch align-items-center" style="background-image:url({% static 'images/about_sami.png' %});"></div>
+                        <div class="img d-flex align-self-stretch align-items-center" style="background-image:url({% static 'images/js2.png' %});"></div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
@@ -149,7 +159,7 @@
                                 <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
                                 <p>I am a backend developer with expertise in Python Django And Django Rest Framework. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.</p>
 
-                                <ul class="about-info mt-4 px-md-0 px-2">s
+                                <ul class="about-info mt-4 px-md-0 px-2">
                                     <li class="d-flex"><span>Name:</span> <span>SAMIULLAH JABBAR</span></li>
                                     <li class="d-flex"><span>Date of birth:</span> <span>APRIL 02, 2005</span></li>
                                     <li class="d-flex"><span>Address:</span> <span>Pearl Paradise Hasilpur Road, Bahawalpur</span></li>
@@ -404,8 +414,8 @@
                             <span class="flaticon-branding"></span>
                         </div>
                         <div class="media-body">
-                            <h3 class="heading mb-3">Banner Design</h3>
-                            <p>Our banner design (BD) service creates visually striking graphics that effectively communicate your message. We focus on captivating layouts, vibrant colors, and clear branding to ensure your banners stand out . Whether for digital ads or print, we deliver designs that enhance visibility and drive engagement, elevating your marketing efforts significantly Banner Design.</p>
+                            <h3 class="heading mb-3">FASTAPI</h3>
+                            <p>Our FastAPI service develops high-performance web applications with speed and efficiency. Leveraging FastAPI's modern features, we create scalable APIs that support real-time data processing. Our focus on simplicity and rapid development ensures quick deployment while maintaining robust functionality, allowing your projects to thrive in a fast-paced digital landscape.</p>
                         </div>
                     </div>
                 </div>
@@ -413,48 +423,48 @@
 
             <div class="row">
                 <div class="col-md-6 col-lg-3">
-                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-computer"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">FASTAPI</h3>
-                            <p>Our FastAPI service develops high-performance web applications with speed and efficiency. Leveraging FastAPI's modern features, we create scalable APIs that support real-time data processing. Our focus on simplicity and rapid development ensures quick deployment while maintaining robust functionality, allowing your projects to thrive in a fast-paced digital landscape.</p>
-                        </div>
-                    </div>
+{#                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">#}
+{#                        <div class="icon d-flex align-items-center justify-content-center">#}
+{#                            <span class="flaticon-computer"></span>#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="heading mb-3">FASTAPI</h3>#}
+{#                            <p>Our FastAPI service develops high-performance web applications with speed and efficiency. Leveraging FastAPI's modern features, we create scalable APIs that support real-time data processing. Our focus on simplicity and rapid development ensures quick deployment while maintaining robust functionality, allowing your projects to thrive in a fast-paced digital landscape.</p>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-vector"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">E-Commerce</h3>
-                            <p>Our e-commerce service builds robust online stores tailored to your business needs. We focus on user-friendly design, secure payment integration, and seamless navigation to enhance customer experience. From product management to analytics, we provide comprehensive solutions that drive sales and boost your online presence, helping you succeed in the digital marketplace.</p>
-                        </div>
-                    </div>
+{#                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">#}
+{#                        <div class="icon d-flex align-items-center justify-content-center">#}
+{#                            <span class="flaticon-vector"></span>#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="heading mb-3">E-Commerce</h3>#}
+{#                            <p>Our e-commerce service builds robust online stores tailored to your business needs. We focus on user-friendly design, secure payment integration, and seamless navigation to enhance customer experience. From product management to analytics, we provide comprehensive solutions that drive sales and boost your online presence, helping you succeed in the digital marketplace.</p>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-vector"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">FASTAPI CRUD</h3>
-                            <p>Our FastAPI CRUD service provides efficient, scalable solutions for managing data with ease. We leverage FastAPI’s modern features to build robust Create, Read, Update, and Delete operations, ensuring high performance and quick response times. Ideal for developers, our service streamlines application development and enhances your project’s overall efficiency.</p>
-                        </div>
-                    </div>
+{#                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">#}
+{#                        <div class="icon d-flex align-items-center justify-content-center">#}
+{#                            <span class="flaticon-vector"></span>#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="heading mb-3">FASTAPI CRUD</h3>#}
+{#                            <p>Our FastAPI CRUD service provides efficient, scalable solutions for managing data with ease. We leverage FastAPI’s modern features to build robust Create, Read, Update, and Delete operations, ensuring high performance and quick response times. Ideal for developers, our service streamlines application development and enhances your project’s overall efficiency.</p>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="flaticon-zoom"></span>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">OMS</h3>
-                            <p>Our Office Management System simplifies daily operations  enhances productivity.We offer comprehensive solution for managing tasks,scheduling,document storage,and communication With user-friendly features and real-time collaboration,our OMS streamlines workflows,improves organization,and fAsters teamwork,helping your business operate efficiently in a dynamic environment</p>
-                        </div>
-                    </div>
+{#                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">#}
+{#                        <div class="icon d-flex align-items-center justify-content-center">#}
+{#                            <span class="flaticon-zoom"></span>#}
+{#                        </div>#}
+{#                        <div class="media-body">#}
+{#                            <h3 class="heading mb-3">OMS</h3>#}
+{#                            <p>Our Office Management System simplifies daily operations  enhances productivity.We offer comprehensive solution for managing tasks,scheduling,document storage,and communication With user-friendly features and real-time collaboration,our OMS streamlines workflows,improves organization,and fAsters teamwork,helping your business operate efficiently in a dynamic environment</p>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>
@@ -506,10 +516,10 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/BannerDesign.jpg' %});">
+                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/FASTAPI.jpg' %});">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Banner Design</a></h3>
+                            <h3><a href="#">FASTAPI</a></h3>
                             <span>Banner Design</span>
                         </div>
                     </div>
@@ -523,41 +533,41 @@
                         </div>
                     </div>
                 </div>
+{#                <div class="col-md-3">#}
+{#                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/OMS.jpg' %});">#}
+{#                        <div class="overlay"></div>#}
+{#                        <div class="text text-center p-4">#}
+{#                            <h3><a href="#">OMS</a></h3>#}
+{#                            <span>OMS</span>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-md-3">#}
+{#                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/FASTAPICRUD.jpg' %});">#}
+{#                        <div class="overlay"></div>#}
+{#                        <div class="text text-center p-4">#}
+{#                            <h3><a href="#">FASTAPI CRUD</a></h3>#}
+{#                            <span>FASTAPI CRUD</span>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
                 <div class="col-md-3">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/OMS.jpg' %});">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#">OMS</a></h3>
-                            <span>OMS</span>
-                        </div>
-                    </div>
+{#                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/FASTAPI.jpg' %});">#}
+{#                        <div class="overlay"></div>#}
+{#                        <div class="text text-center p-4">#}
+{#                            <h3><a href="#">FASTAPI</a></h3>#}
+{#                            <span>FASTAPI</span>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
                 <div class="col-md-3">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/FASTAPICRUD.jpg' %});">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#">FASTAPI CRUD</a></h3>
-                            <span>FASTAPI CRUD</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/FASTAPI.jpg' %});">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#">FASTAPI</a></h3>
-                            <span>FASTAPI</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/E-Commerce.jpg' %});">
-                        <div class="overlay"></div>
-                        <div class="text text-center p-4">
-                            <h3><a href="#">E-Commerce</a></h3>
-                            <span>E-Commerce</span>
-                        </div>
-                    </div>
+{#                    <div class="project img shadow ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/E-Commerce.jpg' %});">#}
+{#                        <div class="overlay"></div>#}
+{#                        <div class="text text-center p-4">#}
+{#                            <h3><a href="#">E-Commerce</a></h3>#}
+{#                            <span>E-Commerce</span>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>
@@ -856,8 +866,8 @@
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Design</a></li>
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Development</a></li>
                             <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Web Application</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Banner Design</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>
+                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>FastApi</a></li>
+{#                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Graphic Design</a></li>#}
                         </ul>
                     </div>
                 </div>
@@ -872,9 +882,12 @@
                             </ul>
                         </div>
                         <ul class="ftco-footer-social list-unstyled mt-2">
-                            <li class="ftco-animate"><a href="#" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://x.com/SAMIULLAH8680?t=Y89M6Gi8X5r6q66gHMb9tA&s=08" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100049114371945&mibextid=ZbWKwL" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/samiullah_jabbar/profilecard/?igsh=NTV4YWRiYjVobjFt" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="mailto:your_email@gmail.com" title="Gmail" target="_blank"><span class="fa fa-envelope"></span></a></li>
+                            <li class="ftco-animate"><a href="https://github.com/SamiullahJabbar" title="GitHub" target="_blank"><span class="fa fa-github"></span></a></li>
+{#                            <li class="ftco-animate"><a href="" title="youtube"><span class="fa fa-youtube"></span></a></li>#}
                         </ul>
                     </div>
                 </div>
@@ -882,7 +895,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
             </div>

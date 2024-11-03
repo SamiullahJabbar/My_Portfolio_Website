@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path('index/', views.index, name='index'),
-    path('resume/', views.resume, name='resume'),
+    path('download-cv/', views.download_resume, name='download_cv'),
 
 ]
