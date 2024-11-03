@@ -34,7 +34,7 @@ def index(request):
 
 
 def download_resume(request):
-    file_path = os.path.join(settings.BASE_DIR, 'my_app/static/samiullah.pdf')  # Update this path
+    file_path = os.path.join(settings.BASE_DIR, 'my_app/static/samiullahjabbar.pdf')  # Update this path
     if os.path.exists(file_path):
         return FileResponse(open(file_path, 'rb'), as_attachment=True)
     else:
